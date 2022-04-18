@@ -1,0 +1,278 @@
+/*---Resetting default browser settings for margin and padding---*/
+*{
+  margin:0;
+  padding:0;
+  text-align: center; /*Moved this up here because I ended up using it sitewide*/
+}
+
+body{
+  background-color: #3F965C;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+  font-size: 16px;
+  line-height: 1.6em;
+}
+
+.contact-background{
+  background-image: 
+  linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(63, 150, 92, 0.7) 100%),
+  url('/images/lailapeak.jpg');
+  background-position: center bottom;
+}
+
+/*---Sitewide Container to Center Elements on Page---*/
+
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/*----Sitewide Header----*/
+
+#main-header{
+  background-color: #86DDA3;
+  padding: 10px;
+}
+
+/*----Sitewide Navbar----*/
+
+#navbar{
+  background-color: #002C0F;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+
+#navbar ul{
+  list-style: none;
+  font-size: 20px;
+}
+
+#navbar li{
+  display: inline;
+  padding-right: 20px;
+}
+
+#navbar a{
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#navbar a:hover{
+  color: #3F965C;
+  transition: 0.5s;
+}
+
+/*---Showcase - Activities Page---*/
+
+#showcase{
+  background-image: url('/images/k2_2.jpg');
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  margin-top: -40px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+/*---Showcase Text - Activities Page---*/
+
+#showcase h2{
+  color: #fff;
+  font-size: 50px;
+  line-height: 1.6em;
+  padding-top: 20px;
+}
+
+/*---Flex Container - Activities Page---*/
+
+.flex-container{
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 80%;
+  gap: 20px 20px;
+}
+
+/*---Flex Items - Activities Page---*/
+
+.todo-items {
+  background-color: #86DDA3;
+  padding: 5px;
+  width: 375px;
+  height: 550px;
+  overflow: hidden;
+}
+
+.todo-items:hover {
+  background-color: #86DDA3;
+  padding: 5px;
+  width: 375px;
+  height: 550px;
+  overflow: auto;
+}
+
+.todo-items ul{
+  list-style: none;
+}
+
+.todo-items img{
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*---Slideshow Frame---*/
+
+#slideshow{
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden; /*---Hides .slide-wrapper outside the frame---*/
+  height: 720px;
+  width: 1280px;
+}
+
+.slide-wrapper{
+  width: 6400px;
+  animation-name: slide-in; /* See @keyframes below for settings*/
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.slide {
+  float: left;
+  width: 1280px;
+  height: 720px;
+}
+
+/*---Slideshow Image Order---*/
+
+.slide:nth-child(1){
+  background-image: url('/images/fairymeadows.jpg');
+}
+
+.slide:nth-child(2){
+  background-image: url('/images/k2.jpg');
+}
+
+.slide:nth-child(3){
+  background-image: url('/images/katpana.jpg');
+}
+
+.slide:nth-child(4){
+  background-image: url('/images/passucones.jpg');
+}
+
+.slide:nth-child(5){
+  background-image: url('/images/attabadlake.jpg');
+}
+
+/*---Slideshow Text---*/
+
+.slide-number {
+  margin-top: 620px;
+  margin-left: 10px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 60px;
+  text-align: left;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/*---Slideshow Animation---*/
+
+@keyframes slide-in{
+  10% {margin-left: 0px;}
+  20% {margin-left: -1280px;}
+  30% {margin-left: -1280px;}
+  40% {margin-left: -2560px;}
+  50% {margin-left: -2560px;}
+  60% {margin-left: -3840px;}
+  70% {margin-left: -3840px;}
+  80% {margin-left: -5120px;}
+  90% {margin-left: -5120px;}
+}
+
+
+/*---Contact Form / Sitewide Button Design---*/
+
+.contact-form{
+  margin-top: 100px;
+  padding: 10% 0;
+}
+
+.contact-form .form-group{
+  padding-bottom: 20px;
+}
+
+.contact-form input[type="text"], .contact-form textarea{
+  padding: 12px;
+  width: 80%;
+  min-width: 200px;
+  max-width: 700px;
+}
+
+.button, button{
+  background-color: #002C0F;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 25px;
+}
+
+.button:hover, button:hover{
+  background-color: #000F05;
+  color: #3F965C;
+  transition: 0.5s;
+}
+
+/*-----Sitewide Footer-----*/
+
+#main-footer {
+  background-color: #86DDA3;
+  color: #002C0F;
+  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 0;
+  border-top: solid 5px #002C0F;
+}
+
+
+#main-footer .socials a{
+  text-decoration: none;
+  font-size: 16px;
+  color: #002C0F;
+}
+
+.socials-logo{
+  width: 50px;
+}
+
+.footer-logo{
+  width: 100px;
+}
+
+@media only screen and (max-width: 500px) {
+  .todo-items {
+  padding: 5px;
+  width: 95%;
+  min-width: 150px;
+  height: 550px;
+  overflow: hidden;
+  }
+  .todo-items img{
+  max-width: 90%;
+  min-width: 145px;
+  }
+  .container{
+  width: 95%;
+  min-width: 155px;
+  }
+  .flex-container{
+  width: 95%;
+  min-width: 155px;
+  }
+}
